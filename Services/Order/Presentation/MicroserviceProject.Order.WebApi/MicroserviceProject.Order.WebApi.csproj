@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\..\Core\MicroserviceProject.Order.Application\MicroserviceProject.Order.Application.csproj" />
+    <ProjectReference Include="..\..\Core\MicroserviceProject.Order.Domain\MicroserviceProject.Order.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\MicroserviceProject.Order.Persistence\MicroserviceProject.Order.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
