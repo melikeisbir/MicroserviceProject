@@ -1,4 +1,29 @@
+using MicroserviceProject.Order.Application.Features.CQRS.Handlers.AddressHandlers;
+using MicroserviceProject.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers;
+using MicroserviceProject.Order.Application.Interfaces;
+using MicroserviceProject.Order.Application.Services;
+using MicroserviceProject.Order.Persistence.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddApplicationService(builder.Configuration);
+
+#region
+builder.Services.AddScoped<GetAddressQueryHandler>();
+builder.Services.AddScoped<GetAddressByIdQueryHandler>();
+builder.Services.AddScoped<CreateAddressCommandHandler>();
+builder.Services.AddScoped<UpdateAddressCommandHandler>();
+builder.Services.AddScoped<RemoveAddressCommandHandler>();
+
+
+builder.Services.AddScoped<GetOrderDetailQueryHandler>();
+builder.Services.AddScoped<GetOrderDetailByIdQueryHandler>();
+builder.Services.AddScoped<CreateOrderDetailCommandHandler>();
+builder.Services.AddScoped<UpdateOrderDetailCommandHandler>();
+builder.Services.AddScoped<RemoveOrderDetailCommandHandler>();
+#endregion
 
 // Add services to the container.
 
