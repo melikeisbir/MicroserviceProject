@@ -2,10 +2,12 @@ using MicroserviceProject.Order.Application.Features.CQRS.Handlers.AddressHandle
 using MicroserviceProject.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers;
 using MicroserviceProject.Order.Application.Interfaces;
 using MicroserviceProject.Order.Application.Services;
+using MicroserviceProject.Order.Persistence.Context;
 using MicroserviceProject.Order.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<OrderContext>();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddApplicationService(builder.Configuration);

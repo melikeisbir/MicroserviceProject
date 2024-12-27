@@ -12,7 +12,7 @@ namespace MicroserviceProject.Order.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=...;initial Catalog=MicroserviceProjectOrderDb;integrated Security=ture;");
+            optionsBuilder.UseSqlServer("Server=localhost,1440;initial Catalog=MicroserviceProjectOrderDb; User=sa; Password=123456Mm!");
         }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
