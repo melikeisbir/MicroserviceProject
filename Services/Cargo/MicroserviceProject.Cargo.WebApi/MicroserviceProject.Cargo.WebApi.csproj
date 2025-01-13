@@ -25,4 +25,8 @@
     <ProjectReference Include="..\MicroserviceProject.Cargo.EntityLayer\MicroserviceProject.Cargo.EntityLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
