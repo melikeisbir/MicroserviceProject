@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MicroserviceProject.Cargo.BusinessLayer.Concrete
 {
-    internal class CargoOperationManager : ICargoOperationService
+    public class CargoOperationManager : ICargoOperationService
     {
         private readonly ICargoOperationDal _cargoOperationDal;
 

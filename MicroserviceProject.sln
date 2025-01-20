@@ -40,15 +40,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{25BA1ED1-E7B7-4EA1-B723-6075783BCA83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceProject.Cargo.EntityLayer", "Services\Cargo\MicroserviceProject.Cargo.EntityLayer\MicroserviceProject.Cargo.EntityLayer.csproj", "{CA03594C-FC7E-474E-9077-7399D14C4CE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.Cargo.EntityLayer", "Services\Cargo\MicroserviceProject.Cargo.EntityLayer\MicroserviceProject.Cargo.EntityLayer.csproj", "{CA03594C-FC7E-474E-9077-7399D14C4CE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceProject.Cargo.BusinessLayer", "Services\Cargo\MicroserviceProject.Cargo.BusinessLayer\MicroserviceProject.Cargo.BusinessLayer.csproj", "{2A399695-2141-447B-8FFC-3D0A5694D4C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.Cargo.BusinessLayer", "Services\Cargo\MicroserviceProject.Cargo.BusinessLayer\MicroserviceProject.Cargo.BusinessLayer.csproj", "{2A399695-2141-447B-8FFC-3D0A5694D4C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceProject.Cargo.DataAccessLayer", "Services\Cargo\MicroserviceProject.Cargo.DataAccessLayer\MicroserviceProject.Cargo.DataAccessLayer.csproj", "{DD53E4D4-CDC3-468F-8C6D-F60C90F178C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.Cargo.DataAccessLayer", "Services\Cargo\MicroserviceProject.Cargo.DataAccessLayer\MicroserviceProject.Cargo.DataAccessLayer.csproj", "{DD53E4D4-CDC3-468F-8C6D-F60C90F178C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceProject.Cargo.DtoLayer", "Services\Cargo\MicroserviceProject.Cargo.DtoLayer\MicroserviceProject.Cargo.DtoLayer.csproj", "{AD748526-4823-4335-821C-A82631C3041D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.Cargo.DtoLayer", "Services\Cargo\MicroserviceProject.Cargo.DtoLayer\MicroserviceProject.Cargo.DtoLayer.csproj", "{AD748526-4823-4335-821C-A82631C3041D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceProject.Cargo.WebApi", "Services\Cargo\MicroserviceProject.Cargo.WebApi\MicroserviceProject.Cargo.WebApi.csproj", "{1E3E35D2-FB9F-4C5E-8342-CD13DB829CA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.Cargo.WebApi", "Services\Cargo\MicroserviceProject.Cargo.WebApi\MicroserviceProject.Cargo.WebApi.csproj", "{1E3E35D2-FB9F-4C5E-8342-CD13DB829CA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{1172EAAF-CE84-48D5-B55E-7612457B45A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceProject.Basket", "Services\Basket\MicroserviceProject.Basket\MicroserviceProject.Basket.csproj", "{D06F24E4-9588-4A38-89E6-08FEB065D8F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -104,6 +108,10 @@ Global
 		{1E3E35D2-FB9F-4C5E-8342-CD13DB829CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E3E35D2-FB9F-4C5E-8342-CD13DB829CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E3E35D2-FB9F-4C5E-8342-CD13DB829CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D06F24E4-9588-4A38-89E6-08FEB065D8F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D06F24E4-9588-4A38-89E6-08FEB065D8F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D06F24E4-9588-4A38-89E6-08FEB065D8F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D06F24E4-9588-4A38-89E6-08FEB065D8F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -128,6 +136,8 @@ Global
 		{DD53E4D4-CDC3-468F-8C6D-F60C90F178C6} = {25BA1ED1-E7B7-4EA1-B723-6075783BCA83}
 		{AD748526-4823-4335-821C-A82631C3041D} = {25BA1ED1-E7B7-4EA1-B723-6075783BCA83}
 		{1E3E35D2-FB9F-4C5E-8342-CD13DB829CA2} = {25BA1ED1-E7B7-4EA1-B723-6075783BCA83}
+		{1172EAAF-CE84-48D5-B55E-7612457B45A0} = {330E56F0-B478-43F3-81BB-8277894F7A52}
+		{D06F24E4-9588-4A38-89E6-08FEB065D8F9} = {1172EAAF-CE84-48D5-B55E-7612457B45A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7585C839-A680-436E-B39E-894CD071A4DF}

@@ -12,7 +12,7 @@ namespace MicroserviceProject.Cargo.DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost,1441;initial Catalog=MicroserviceProjectCargoDb; User=sa; Password=123456Mm!");
+            optionsBuilder.UseSqlServer("Server=localhost,1442;initial Catalog=MicroserviceProjectCargoDb; User=sa; Password=123456Mm!");
         }
         public DbSet<CargoCompany> CargoCompanies { get; set; }
         public DbSet<CargoDetail> CargoDetails { get; set; }

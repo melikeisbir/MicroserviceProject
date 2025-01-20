@@ -1,11 +1,13 @@
 ﻿using MicroserviceProject.Cargo.BusinessLayer.Abstract;
 using MicroserviceProject.Cargo.DtoLayer.Dtos.CargoCustomerDtos;
 using MicroserviceProject.Cargo.EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MicroserviceProject.Cargo.WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CargoCustomersController : ControllerBase

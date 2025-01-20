@@ -1,11 +1,13 @@
 ﻿using MicroserviceProject.Cargo.BusinessLayer.Abstract;
 using MicroserviceProject.Cargo.DtoLayer.Dtos.CargoCompanyDtos;
 using MicroserviceProject.Cargo.EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MicroserviceProject.Cargo.WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CargoCompaniesController : ControllerBase
@@ -37,7 +39,7 @@ namespace MicroserviceProject.Cargo.WebApi.Controllers
             _cargoCompanyService.TDelete(id);
             return Ok("Kargo şirketi başarıyla silindi.");
         }
-        [HttpGet("{id")]
+        [HttpGet("{id}")]
         public IActionResult GetCargoCompanyById(int id)
         {
             var values = _cargoCompanyService.TGetById(id);
