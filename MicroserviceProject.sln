@@ -52,7 +52,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.Cargo.W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{1172EAAF-CE84-48D5-B55E-7612457B45A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceProject.Basket", "Services\Basket\MicroserviceProject.Basket\MicroserviceProject.Basket.csproj", "{D06F24E4-9588-4A38-89E6-08FEB065D8F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.Basket", "Services\Basket\MicroserviceProject.Basket\MicroserviceProject.Basket.csproj", "{D06F24E4-9588-4A38-89E6-08FEB065D8F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
