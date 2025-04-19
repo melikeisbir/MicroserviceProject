@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MicroserviceProject.Catalog.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
