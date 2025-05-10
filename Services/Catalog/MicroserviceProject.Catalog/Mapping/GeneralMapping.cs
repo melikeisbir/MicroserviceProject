@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MicroserviceProject.Catalog.Dtos.CategoryDtos;
+using MicroserviceProject.Catalog.Dtos.FeatureSliderDtos;
 using MicroserviceProject.Catalog.Dtos.ProductDetailDtos;
 using MicroserviceProject.Catalog.Dtos.ProductDtos;
 using MicroserviceProject.Catalog.Dtos.ProductImageDtos;
@@ -34,6 +35,11 @@ namespace MicroserviceProject.Catalog.Mapping
             CreateMap<ProductImage, GetByIdProductImageDto>().ReverseMap();
 
             CreateMap<Product, ResultProductsWithCategoryDto>().ReverseMap();
+
+            CreateMap<FeatureSlider, ResultFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, CreateFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, UpdateFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, GetByIdFeatureSliderDto>().ReverseMap();
         }
     }
 }
