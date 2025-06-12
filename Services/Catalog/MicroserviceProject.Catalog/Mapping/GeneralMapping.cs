@@ -4,6 +4,7 @@ using MicroserviceProject.Catalog.Dtos.FeatureSliderDtos;
 using MicroserviceProject.Catalog.Dtos.ProductDetailDtos;
 using MicroserviceProject.Catalog.Dtos.ProductDtos;
 using MicroserviceProject.Catalog.Dtos.ProductImageDtos;
+using MicroserviceProject.Catalog.Dtos.SpecialOfferDtos;
 using MicroserviceProject.Catalog.Entities;
 
 namespace MicroserviceProject.Catalog.Mapping
@@ -40,6 +41,11 @@ namespace MicroserviceProject.Catalog.Mapping
             CreateMap<FeatureSlider, CreateFeatureSliderDto>().ReverseMap();
             CreateMap<FeatureSlider, UpdateFeatureSliderDto>().ReverseMap();
             CreateMap<FeatureSlider, GetByIdFeatureSliderDto>().ReverseMap();
+
+            CreateMap<SpecialOffer, ResultSpecialOfferDto>().ReverseMap();
+            CreateMap<SpecialOffer, CreateSpecialOfferDto>().ReverseMap();
+            CreateMap<SpecialOffer, UpdateSpecialOfferDto>().ReverseMap();
+            CreateMap<SpecialOffer, GetByIdSpecialOfferDto>().ReverseMap();
         }
     }
 }
